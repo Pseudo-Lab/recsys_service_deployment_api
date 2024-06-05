@@ -1,1 +1,6 @@
-.idea
+.idea/*
+*.ipynb
+.ipynb_checkpoints/
+pytorch_models/*
+
+.env.dev
