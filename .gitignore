@@ -4,3 +4,4 @@
 pytorch_models/*
 
 .env.dev
+__pycache__
