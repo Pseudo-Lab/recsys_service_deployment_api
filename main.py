@@ -8,6 +8,8 @@ from utils.download_models import ModelDownloader
 
 app = FastAPI()
 
+model_downloader = ModelDownloader()
+model_downloader.download_sasrec_model()
 
 class SasrecRequest(BaseModel):
     movie_ids: List[int] = [1, 2, 3, 4]
@@ -27,7 +29,6 @@ async def read_item(sasrec_request: SasrecRequest):
 
 if __name__ == "__main__":
     import uvicorn
-
     model_downloader = ModelDownloader()
     model_downloader.download_sasrec_model()
     uvicorn.run(app, host="127.0.0.1", port=7001)

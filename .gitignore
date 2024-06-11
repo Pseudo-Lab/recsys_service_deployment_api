@@ -1,7 +1,10 @@
 .idea/*
 *.ipynb
 .ipynb_checkpoints/
-pytorch_models/*
+pytorch_models/sasrec/movie_id_dict.pkl
+pytorch_models/sasrec/params.json
+pytorch_models/sasrec/sasrec.pth
+
 
 .env.dev
 __pycache__
