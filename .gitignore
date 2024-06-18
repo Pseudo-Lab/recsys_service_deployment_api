@@ -4,7 +4,8 @@
 pytorch_models/sasrec/movie_id_dict.pkl
 pytorch_models/sasrec/params.json
 pytorch_models/sasrec/sasrec.pth
-
+pytorch_models/ngcf/model/NGCF.pkl
 
 .env.dev
 __pycache__
+
