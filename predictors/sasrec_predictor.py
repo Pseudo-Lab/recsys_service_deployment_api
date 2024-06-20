@@ -1,3 +1,4 @@
+import json
 import os
 import pickle
 from typing import List
@@ -7,7 +8,7 @@ import torch
 
 from pytorch_models.sasrec.args import args
 from pytorch_models.sasrec.model import SASRec
-import json
+from utils.download_models import ModelDownloader
 
 
 class SasrecPredictor:
@@ -45,4 +46,6 @@ class SasrecPredictor:
         return [self.modelid2dbid[_] for _ in recomm_result]
 
 
+model_downloader = ModelDownloader()
+model_downloader.download_sasrec_model()
 sasrec_predictor = SasrecPredictor()
