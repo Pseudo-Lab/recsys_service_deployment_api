@@ -19,6 +19,8 @@ from pytorch_models.ngcf.utility.load_data import *
 from pytorch_models.ngcf.utility.batch_test import *
 
 import pytorch_models.Data.daum.train_test_split as ts
+from utils.download_models import ModelDownloader
+
 
 class NgcfPredictor:
     def __init__(self):
@@ -150,5 +152,8 @@ class NgcfPredictor:
 
         return recomm_result
 
+
+model_downloader = ModelDownloader()
+model_downloader.download_ngcf_model()
 
 ngcf_predictor = NgcfPredictor()

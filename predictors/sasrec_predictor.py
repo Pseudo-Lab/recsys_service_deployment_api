@@ -48,4 +48,5 @@ class SasrecPredictor:
 
 model_downloader = ModelDownloader()
 model_downloader.download_sasrec_model()
+
 sasrec_predictor = SasrecPredictor()

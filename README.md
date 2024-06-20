@@ -11,3 +11,7 @@ docker build -t pseudorec_models_api .
 ```shell
 docker run -d -p 7001:7001 pseudorec_models_api
 ```
+
+```shell
+gunicorn -k uvicorn.workers.UvicornWorker -b 127.0.0.1:7001 --threads 2 main:app 
+```

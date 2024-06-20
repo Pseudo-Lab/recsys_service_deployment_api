@@ -9,3 +9,4 @@ pytorch_models/ngcf/model/NGCF.pkl
 .env.dev
 __pycache__
 
+/pytorch_models/kprn/kprn.pt
